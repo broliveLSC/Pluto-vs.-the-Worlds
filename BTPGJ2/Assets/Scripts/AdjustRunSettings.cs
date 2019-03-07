@@ -46,6 +46,14 @@ public class AdjustRunSettings : MonoBehaviour
     bool startCounting = false;
     float elapsed = 0;
 
+    public Transform back;
+    public Transform next;
+    public Transform restore;
+
+    public Text playerHealth;
+    public Text enemyHealth;
+    public Text gameSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,23 +103,48 @@ public class AdjustRunSettings : MonoBehaviour
                 currentAction();
             }
         }
+
+        next.GetComponent<Text>().text = (page == 1 ? "NEXT" : "START GAME");
+        next.localScale = (index == 3 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        restore.localScale = (index == 4 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        back.localScale = (index == 5 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1,1,1));
     }
 
     
 
     void UpdatePage1()
     {
-        options[0].color = chooseEnemies ? confirmColor : Color.white;
-        options[1].color = !chooseEnemies ? confirmColor : Color.white;
-        options[2].color = healAfterFight ? confirmColor : Color.white;
-        options[3].color = !healAfterFight ? confirmColor : Color.white;
-        options[4].color = canRetry ? confirmColor : Color.white;
-        options[5].color = !canRetry ? confirmColor : Color.white;
+        options[0].color = chooseEnemies ? confirmColor : Color.gray;
+        options[1].color = !chooseEnemies ? confirmColor : Color.gray;
+        options[2].color = healAfterFight ? confirmColor : Color.gray;
+        options[3].color = !healAfterFight ? confirmColor : Color.gray;
+        options[4].color = canRetry ? confirmColor : Color.gray;
+        options[5].color = !canRetry ? confirmColor : Color.gray;
+
+        options[0].transform.localScale = (chooseEnemies ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1f, 1f, 1)) *
+            (index == 0 ? 1.1f : 1);
+        options[1].transform.localScale = (!chooseEnemies ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1f, 1f, 1)) *
+            (index == 0 ? 1.1f : 1);
+        options[2].transform.localScale = (healAfterFight ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1.1f, 1.1f, 1)) *
+            (index == 1 ? 1.1f : 1);
+        options[3].transform.localScale = (!healAfterFight ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1f, 1f, 1)) *
+            (index == 1 ? 1.1f : 1);
+        options[4].transform.localScale = (canRetry ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1f, 1f, 1)) *
+            (index == 2 ? 1.1f : 1);
+        options[5].transform.localScale = (!canRetry ? new Vector3(1.5f, 1.5f, 1) : new Vector3(1f, 1f, 1)) *
+            (index == 2 ? 1.1f : 1);
 
     }
 
     void UpdatePage2()
     {
+        playerHealth.transform.localScale = (index == 0 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        playerHealth.color = (index == 0 ? Color.white : Color.gray);
+        enemyHealth.transform.localScale = (index == 1 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        enemyHealth.color = (index == 1 ? Color.white : Color.gray);
+        gameSpeed.transform.localScale = (index == 2 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        gameSpeed.color = (index == 2 ? Color.white : Color.gray);
+
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
@@ -191,7 +224,7 @@ public class AdjustRunSettings : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Jump")/* || Input.GetButtonDown("Fire1")*/)
         {
             Confirm();
         }

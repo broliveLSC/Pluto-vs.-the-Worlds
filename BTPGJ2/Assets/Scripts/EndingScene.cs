@@ -48,6 +48,10 @@ public class EndingScene : MonoBehaviour
 
     public void ReturnToTitle()
     {
+        // destroy managers that may have made it back to the beginning
+        Destroy(FindObjectOfType<GameSettings>().gameObject);
+        Destroy(FindObjectOfType<RunSettings>().gameObject);
+
         GameManager.instance.ReturnToTitle();
     }
 

@@ -30,6 +30,12 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // destroy managers that may have made it back to the beginning
+        if(FindObjectOfType<GameManager>() != null)
+            Destroy(FindObjectOfType<GameManager>().gameObject);
+        if (FindObjectOfType<RunSettings>() != null)
+            Destroy(FindObjectOfType<RunSettings>().gameObject);
+
         FindObjectOfType<Fade>().alpha = 1;
         FadeFromBlack();
     }
@@ -117,7 +123,7 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Jump"))// || Input.GetButtonDown("Fire1"))
         {
             Confirm();
         }
