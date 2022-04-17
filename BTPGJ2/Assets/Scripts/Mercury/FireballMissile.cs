@@ -20,7 +20,7 @@ public class FireballMissile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsed += Time.deltaTime;
+        elapsed += Time.deltaTime * GameManager.instance.speed;
         if (elapsed > 0.75f)
             DestroyThis();
     }

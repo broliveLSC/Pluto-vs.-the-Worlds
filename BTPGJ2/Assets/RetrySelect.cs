@@ -78,7 +78,9 @@ public class RetrySelect : MonoBehaviour
 
         prevH = h;
 
-        transform.position = points[index].position;
+        //transform.position = points[index].position;
+        points[0].transform.localScale = (index == 0 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
+        points[1].transform.localScale = (index == 1 ? new Vector3(1.25f, 1.25f, 1) : new Vector3(1, 1, 1));
     }
 
     void Left()

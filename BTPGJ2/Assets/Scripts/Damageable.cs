@@ -91,6 +91,12 @@ public class Damageable : MonoBehaviour
             
         }
 
+        if (GetComponent<PlayerController>() != null)
+        {
+            Debug.Log("AAAAAAAAAAA");
+            GameManager.instance.ShakeCamera("hv");
+        }
+
         if (hurtSound != null)
         {
             if (GetComponent<PlayerController>() == null)
@@ -106,6 +112,8 @@ public class Damageable : MonoBehaviour
                 SfxManager.instance.PlaySFX(hurtSound, true);
             }
         }
+
+        
 
     }
 

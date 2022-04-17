@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9023038734560844561}
   - component: {fileID: 1517852988957121788}
   - component: {fileID: 1518197155566121348}
+  - component: {fileID: 6589234599541617559}
   m_Layer: 0
   m_Name: Splosion
   m_TagString: Untagged
@@ -225,3 +226,15 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: f4b9385ec0a8ee5458bae093094a8c87, type: 3}
   interrupt: 0
   loop: 0
+--- !u!114 &6589234599541617559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436186759191097388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

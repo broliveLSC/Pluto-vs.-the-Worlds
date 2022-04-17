@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8436186759191097394}
   - component: {fileID: 8436186759191097389}
   - component: {fileID: 9023038734560844561}
+  - component: {fileID: 3083899770069823990}
   m_Layer: 0
   m_Name: Splosion small
   m_TagString: Untagged
@@ -110,5 +111,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4463edd829bdc864baea4a98f9c18122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3083899770069823990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436186759191097388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

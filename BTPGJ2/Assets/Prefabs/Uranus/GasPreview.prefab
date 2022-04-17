@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9014924308596466130}
   - component: {fileID: 9014924308596466129}
   - component: {fileID: 1462264858424723281}
+  - component: {fileID: 5946053194962321800}
   m_Layer: 0
   m_Name: GasPreview
   m_TagString: Untagged
@@ -115,3 +116,15 @@ MonoBehaviour:
   gasSplosion: {fileID: 8860957392487017839, guid: 779e415ed224c824d834df5f644789c2,
     type: 3}
   duration: 1
+--- !u!114 &5946053194962321800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014924308596466128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -9,7 +9,7 @@ public class Icicle : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        //GameManager.instance.AddTimer(10, DestroySelf);
+        GameManager.instance.AddTimer(10, DestroySelf);
     }
 
     // Update is called once per frame

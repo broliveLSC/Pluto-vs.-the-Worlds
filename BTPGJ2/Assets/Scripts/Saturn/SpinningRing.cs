@@ -20,6 +20,11 @@ public class SpinningRing : MonoBehaviour
         img.Rotate(Vector3.forward, rotSpeed * Time.deltaTime * GameManager.instance.speed);
 
         transform.position += speed * Time.deltaTime * GameManager.instance.speed;
+
+        if(FindObjectOfType<Saturn>() == null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void End()

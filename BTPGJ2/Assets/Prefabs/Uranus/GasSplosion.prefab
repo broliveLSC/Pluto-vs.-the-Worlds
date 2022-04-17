@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6199659311270737833}
   - component: {fileID: 3624721899316405742}
   - component: {fileID: 9074881745759900388}
+  - component: {fileID: 8447715200627037922}
   m_Layer: 0
   m_Name: GasSplosion
   m_TagString: Untagged
@@ -269,3 +270,15 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: 7ab8c1268acdad043a5cc84616aa81df, type: 3}
   interrupt: 0
   loop: 0
+--- !u!114 &8447715200627037922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860957392487017839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

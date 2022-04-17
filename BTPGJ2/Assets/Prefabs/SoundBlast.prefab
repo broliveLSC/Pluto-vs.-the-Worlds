@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7321180425772894455}
   - component: {fileID: 7321180425772894454}
   - component: {fileID: 5245422355960074151}
+  - component: {fileID: 4780241365548798472}
   m_Layer: 0
   m_Name: SoundBlast
   m_TagString: Untagged
@@ -110,5 +111,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af31628653db46a49a2f3f3c3187d7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4780241365548798472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7321180425772894449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

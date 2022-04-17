@@ -504,6 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4887929139923382900}
   - component: {fileID: 6995043522513955332}
+  - component: {fileID: 511804565503958284}
   m_Layer: 10
   m_Name: Hover
   m_TagString: Untagged
@@ -546,6 +547,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &511804565503958284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847993440915938104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d827d7b350d9344e8bb1814325c5c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1931627537764396392
 PrefabInstance:
   m_ObjectHideFlags: 0
